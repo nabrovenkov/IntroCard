@@ -1,3 +1,7 @@
 function Card () {
-  <div>Hello</div>
+  return (
+    <div>Hello</div>
+  )
 }
+
+export  default Card
