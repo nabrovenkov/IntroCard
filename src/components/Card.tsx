@@ -3,9 +3,9 @@ import { CardStyle } from "../styled/CardStyle.styled"
 
 function Card () {
   return (
-    <div>
-      <CardStyle>Привет</CardStyle>
-    </div>
+    <CardStyle>
+      <CardContent></CardContent>
+    </CardStyle>
   )
 }
 
