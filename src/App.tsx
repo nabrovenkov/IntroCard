@@ -7,7 +7,6 @@ function App() {
   return (
 		<div className='App'>
 			<CardWrapper>
-        <div>"dfsdf"</div>
 				<Card />
 			</CardWrapper>
 		</div>
