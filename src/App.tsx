@@ -5,12 +5,12 @@ import CardWrapper from './styled/CardWrapper.styled';
 
 function App() {
   return (
-    <div className="App">
-      <CardWrapper>
-        <Card />
-      </CardWrapper>
-    </div>
-  );
+		<div className='App'>
+			<CardWrapper>
+				<Card />
+			</CardWrapper>
+		</div>
+	)
 }
 
 export default App;

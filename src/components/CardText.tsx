@@ -1,7 +1,11 @@
 import React from 'react' 
+import styled from 'styled-components'
 
-function CardText () {
-  
-}
+
+
+const CardText = styled.div`
+  font-size: 20px;
+
+`
 
 export default CardText
