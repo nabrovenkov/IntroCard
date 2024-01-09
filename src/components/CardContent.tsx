@@ -1,10 +1,12 @@
+import React from "react";
 import {CardText, Wrapper} from "./CardText";
 import { CardButton } from '../styles/CardButton.styled';
-import { ReactComponent as Image } from "../image/Rectangle 1.svg"
+import { ReactComponent as Image } from "../image/Rectangle 1.svg";
 import { CardImage } from "./CardImage";
+import styled from "styled-components";
 
 
-function CardContent (props: any) {
+function CardContent () {
 
 
   return (
@@ -13,10 +15,8 @@ function CardContent (props: any) {
 				<Image />
 			</CardImage>
 			<Wrapper>
-				<CardText textStyle={"title"}>
-					Headline
-				</CardText>
-				<CardText textStyle={"text"}>
+				<CardText textType={'title'}>Headline</CardText>
+				<CardText textType={'text'}>
 					Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
 					ornare in venen.
 				</CardText>

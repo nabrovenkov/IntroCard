@@ -1,22 +1,28 @@
 import styled, { css } from 'styled-components'
 
 type CardTextPropsType = {
-  textStyle?: "title" | "text"
+	textType?: 'text' | 'title'
 }
 
-export const CardText = styled.div`
-  font-weight: 500;
-  color: #ABB3BA;
-  line-height: 20px;
-  font-size: 12px;
-  padding-bottom: 20px;
-  
-  ${props => props.textStyle === "title" && css<CardTextPropsType> `
-    font-size: 16px;
-    font-weight: 700;
-    color: black;
-    
-  `}
+export const CardText = styled.div<CardTextPropsType>`
+	padding-bottom: 20px;
+
+	${props =>
+		props.textType === 'title' &&
+		css<CardTextPropsType>`
+			font-size: 16px;
+			font-weight: 700;
+			color: black;
+		`}
+
+	${props =>
+		props.textType === 'text' &&
+		css<CardTextPropsType>`
+			font-size: 12px;
+			font-weight: 500;
+			color: #abb3ba;
+			line-height: 20px;
+		`}
 `
 
 
