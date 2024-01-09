@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const CardStyle = styled.article`
-	width: 300px;
-	min-height: 350px;
+	max-width: 300px;
+	width: 100%;
+	max-height: 350px;
 	border-radius: 15px;
   box-sizing: border-box;
 	padding: 10px 10px 10px 10px;
