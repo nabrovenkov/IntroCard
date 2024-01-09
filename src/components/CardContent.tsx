@@ -12,7 +12,8 @@ function CardContent (props: any) {
 				<Image />
 			</CardImage>
 			<CardText text-view={"title"}>
-        "Headline"
+				<h1>Headline</h1>
+        
       </CardText>
 			<CardText>
 				"Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie

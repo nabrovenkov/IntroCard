@@ -7,5 +7,4 @@ export const CardStyle = styled.article`
   box-sizing: border-box;
 	padding: 10px;
 	box-shadow: 0px 4px 20px 5px #000000;
-	font-family: 'Inter';
 `  
