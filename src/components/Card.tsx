@@ -1,5 +1,5 @@
 import React from "react"
-import { CardStyle } from "../styled/CardStyle.styled"
+import { CardStyle } from "../styles/CardStyle.styled"
 import CardContent from "./CardContent"
 
 function Card () {
