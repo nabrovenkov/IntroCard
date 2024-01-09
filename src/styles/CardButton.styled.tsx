@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components';
-import { CardButtonPropsType } from '../components/CardText';
 
+type CardButtonPropsType = {
+	primary?: boolean
+	secondary?: boolean
+}
 
 export const CardButton = styled.button<CardButtonPropsType> `
 	width: 86px;
@@ -11,7 +14,7 @@ export const CardButton = styled.button<CardButtonPropsType> `
 	border-style: none;
   background-color: #4e71fe;   
   color: white; 
-  `}
+	`}
 
 	${props => props.secondary &&
     css<CardButtonPropsType> `

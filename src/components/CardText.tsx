@@ -1,24 +1,24 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-type:
+type CardTextPropsType = {
+  textStyle?: "title" | "text"
+}
+
 export const CardText = styled.div`
   font-weight: 500;
   color: #ABB3BA;
   line-height: 20px;
   font-size: 12px;
   padding-bottom: 20px;
-  `
-export const CardTitle = styled(CardText)`
-  font-size: 16px;
-  font-weight: 700;
-  color: black;
   
-  `
+  ${props => props.textStyle === "title" && css<CardTextPropsType> `
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    
+  `}
+`
 
-export type CardButtonPropsType = {
-  primary?: boolean
-  secondary?: boolean
-}
 
 export const Wrapper = styled.div`
   font-family: "Inter";

@@ -1,4 +1,4 @@
-import {CardText, CardTitle, Wrapper} from "./CardText";
+import {CardText, Wrapper} from "./CardText";
 import { CardButton } from '../styles/CardButton.styled';
 import { ReactComponent as Image } from "../image/Rectangle 1.svg"
 import { CardImage } from "./CardImage";
@@ -13,10 +13,10 @@ function CardContent (props: any) {
 				<Image />
 			</CardImage>
 			<Wrapper>
-				<CardTitle>
+				<CardText textStyle={"title"}>
 					Headline
-				</CardTitle>
-				<CardText>
+				</CardText>
+				<CardText textStyle={"text"}>
 					Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
 					ornare in venen.
 				</CardText>
