@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+type:
 export const CardText = styled.div`
   font-weight: 500;
   color: #ABB3BA;
@@ -14,26 +15,10 @@ export const CardTitle = styled(CardText)`
   
   `
 
-export const CardButton = styled.button`
-	background-color: #4e71fe;
-  width: 86px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  &:last-child{
-    margin-left: 12px;
-  } 
-    
-  `
-
-export const CardButtonSave = styled(CardButton)`
-  background-color: white;
-  color: #4e71fe;
-  border-color: #4e71fe;
-  border-width: 2px;
-  border-style: solid;
-`
+export type CardButtonPropsType = {
+  primary?: boolean
+  secondary?: boolean
+}
 
 export const Wrapper = styled.div`
   font-family: "Inter";
