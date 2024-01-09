@@ -11,10 +11,10 @@ function CardContent (props: any) {
 			<CardImage>
 				<Image />
 			</CardImage>
-			<CardText TextView={"title"}>
+			<CardText text-view={"title"}>
         "Headline"
       </CardText>
-			<CardText TextView={"text"}>
+			<CardText>
 				"Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
 				ornare in venen."
 			</CardText>
